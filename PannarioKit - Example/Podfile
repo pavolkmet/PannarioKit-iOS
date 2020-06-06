@@ -1,0 +1,9 @@
+platform :ios, '11.0'
+
+target 'PannarioKit - Example' do
+  # Comment the next line if you don't want to use dynamic frameworks
+  use_frameworks!
+
+  pod 'PannarioKit', :path => '../PannarioKit.podspec'
+
+end

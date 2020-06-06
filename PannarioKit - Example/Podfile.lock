@@ -1,0 +1,16 @@
+PODS:
+  - PannarioKit (1.0.0)
+
+DEPENDENCIES:
+  - PannarioKit (from `../PannarioKit.podspec`)
+
+EXTERNAL SOURCES:
+  PannarioKit:
+    :path: "../PannarioKit.podspec"
+
+SPEC CHECKSUMS:
+  PannarioKit: 7432c3c17a49a6a09d7b05324f30fb8bf1bc5306
+
+PODFILE CHECKSUM: 8fe3feb4ef3af89b8f7c626e56d18685a8b0e2b5
+
+COCOAPODS: 1.9.1
