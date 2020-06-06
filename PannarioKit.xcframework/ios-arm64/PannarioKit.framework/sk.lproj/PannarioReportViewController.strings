@@ -1,0 +1,9 @@
+
+/* Class = "UINavigationItem"; title = "Create report"; ObjectID = "Fnq-4C-dWD"; */
+"Fnq-4C-dWD.title" = "Vytvoriť hlásenie";
+
+/* Class = "UIButton"; normalTitle = "Send report"; ObjectID = "Lr5-Kg-Fc6"; */
+"Lr5-Kg-Fc6.normalTitle" = "Odoslať hlásenie";
+
+/* Class = "UIBarButtonItem"; title = "Back"; ObjectID = "a4T-nP-ZUt"; */
+"a4T-nP-ZUt.title" = "Naspäť";
