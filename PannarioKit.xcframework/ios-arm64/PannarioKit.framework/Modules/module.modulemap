@@ -1,0 +1,11 @@
+framework module PannarioKit {
+  umbrella header "PannarioKit.h"
+
+  export *
+  module * { export * }
+}
+
+module PannarioKit.Swift {
+    header "PannarioKit-Swift.h"
+    requires objc
+}

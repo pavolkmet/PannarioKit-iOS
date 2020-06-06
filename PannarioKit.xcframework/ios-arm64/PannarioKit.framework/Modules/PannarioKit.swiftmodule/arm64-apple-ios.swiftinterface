@@ -1,0 +1,60 @@
+// swift-interface-format-version: 1.0
+// swift-compiler-version: Apple Swift version 5.2.4 (swiftlang-1103.0.32.9 clang-1103.0.32.53)
+// swift-module-flags: -target arm64-apple-ios11.0 -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name PannarioKit
+import Foundation
+@_exported import PannarioKit
+import Swift
+import UIKit
+extension UITableView {
+  public func registerHeaderFooterView<T>(fromClass type: T.Type) where T : UIKit.UITableViewHeaderFooterView
+  public func dequeueHeaderFooterView<T>(fromClass type: T.Type) -> T? where T : UIKit.UITableViewHeaderFooterView
+  public func registerCell<T>(fromClass type: T.Type) where T : UIKit.UITableViewCell
+  public func dequeueReusableCell<T>(fromClass type: T.Type, for indexPath: Foundation.IndexPath) -> T? where T : UIKit.UITableViewCell
+}
+extension NSObject {
+  public class var `class`: Swift.String {
+    get
+  }
+}
+@objc @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers final public class Pannario : ObjectiveC.NSObject {
+  public static let shared: PannarioKit.Pannario
+  final public var recognitions: [PannarioKit.RecognitionType]? {
+    get
+  }
+  final public var token: Swift.String? {
+    get
+  }
+  final public var isPresented: Swift.Bool {
+    get
+  }
+  final public func configure(recognitions: [PannarioKit.RecognitionType]? = [.shakeGesture], token: Swift.String?)
+  final public func present(over topViewController: UIKit.UIViewController, image: UIKit.UIImage? = nil, animated: Swift.Bool = true, completion: (() -> Swift.Void)? = nil)
+  @objc deinit
+}
+public enum RecognitionType : Swift.String, Swift.Codable {
+  case shakeGesture
+  case imageCapture
+  public typealias RawValue = Swift.String
+  public init?(rawValue: Swift.String)
+  public var rawValue: Swift.String {
+    get
+  }
+}
+extension UICollectionView {
+  public func registerCell<T>(fromClass type: T.Type) where T : UIKit.UICollectionViewCell
+  public func dequeueReusableCell<T>(fromClass type: T.Type, for indexPath: Foundation.IndexPath) -> T? where T : UIKit.UICollectionViewCell
+}
+public protocol Errorable : Swift.Error {
+  associatedtype ErrorType : Swift.Equatable
+  var type: Self.ErrorType { get set }
+  var error: Foundation.NSError? { get set }
+  init(code: Swift.Int, data: Foundation.Data?)
+  init(error: Foundation.NSError?)
+  init(type: Self.ErrorType)
+}
+extension UIWindow {
+  @objc override dynamic public func motionEnded(_ motion: UIKit.UIEvent.EventSubtype, with event: UIKit.UIEvent?)
+}
+extension PannarioKit.RecognitionType : Swift.Equatable {}
+extension PannarioKit.RecognitionType : Swift.Hashable {}
+extension PannarioKit.RecognitionType : Swift.RawRepresentable {}
