@@ -15,9 +15,9 @@ Pod::Spec.new do |spec|
   #  summary should be tweet-length, and the description more in depth.
   #
 
-  spec.name                  = "PannarioKit"
-  spec.summary               = "It's a framework which can be used to report various types of errors, bug etc. directly from the iOS application."
-  spec.version               = "1.0.0"
+  spec.name    = "PannarioKit"
+  spec.summary = "It's a framework which can be used to report various types of errors, bug etc. directly from the iOS application."
+  spec.version = "1.0.1"
 
   # This description is used to generate tags and improve search results.
   #   * Think: What does it do? Why did you write it? What is the focus?
@@ -25,12 +25,12 @@ Pod::Spec.new do |spec|
   #   * Write the description between the DESC delimiters below.
   #   * Finally, don't worry about the indent, CocoaPods strips it!
 
-  spec.description  = <<-DESC
-                        It's a framework which can be used to report various types of errors, bug etc. directly from the iOS application. 
-                        These reports can later be seen inside the administration interface where they can be managed.
-                      DESC
+  spec.description = <<-DESC
+                     It's a framework which can be used to report various types of errors, bug etc. directly from the iOS application. 
+                     These reports can later be seen inside the administration interface where they can be managed.
+                     DESC
 
-  spec.homepage     = "https://pannario-admin.herokuapp.com"
+  spec.homepage    = "https://pannario-admin.herokuapp.com"
 
   # ―――  Spec License  ――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
   #
@@ -61,7 +61,7 @@ Pod::Spec.new do |spec|
   #  the deployment target. You can optionally include the target after the platform.
   #
 
-  spec.platform           = :ios, "11.0"
+  spec.platform = :ios, "11.0"
 
   # ――― Source Location ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
   #
@@ -69,7 +69,7 @@ Pod::Spec.new do |spec|
   #  Supports git, hg, bzr, svn and HTTP.
   #
 
-  spec.source       = { :git => "https://github.com/pavolkmet/PannarioKit-iOS.git", :tag => spec.version }
+  spec.source = { :git => "https://github.com/pavolkmet/PannarioKit-iOS.git", :tag => spec.version }
 
   # ――― Source Code ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
   #
@@ -101,6 +101,6 @@ Pod::Spec.new do |spec|
   #  the lib prefix of their name.
   #
 
-  spec.vendored_frameworks   = "PannarioKit.xcframework"
+  spec.vendored_frameworks = "PannarioKit.xcframework"
 
 end
