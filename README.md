@@ -96,3 +96,7 @@ Pavol Kmet
 ## License
 
 PannarioKit is available under the MIT license. See the LICENSE file for more info.
+
+## Note
+
+PannarioKit it's my diploma thesis project. More about my diploma thesis can be found at the [link](https://opac.crzp.sk/?fn=detailBiblioForm&sid=7F3536D8180CDFBB144A3AA24ED7&seo=CRZP-detail-kniha).
